@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+             html{
+            height: auto 100%;
+             }
+            body{
+      
+                background-image:url('https://webpage.pace.edu/CM22566P/assignment3/CHRISTUS.gif');
+                background-size:100%;
+                background-repeat: repeat-y;
+                background-attachment: fixed;
+                background-size: cover;
+                height:100%;
+                width:100%;
+                display: grid;  
+            }
+            @media screen and (max-width:700px) {
+                body{
+                background-image:url('https://webpage.pace.edu/CM22566P/assignment3/CHRISTUS%20(Infographic).gif');
+                background-size:100%;
+                background-repeat: repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                height:100%;
+                width:100%;
+                display: grid;  
+                }
+
+                body nav{
+                font-family: 'Brush Script MT', cursive;
+                font-size: 2rem;
+                padding-left: 1px;
+                grid-area: 100%;
+                margin: 0 auto;
+                color: black;
+                }
+                .column-nav{
+                background: none;
+                display: grid;
+                grid-area: 100%;
+                justify-content: right;
+              
+                height: 100%;
+                width: 100%;
+             
+                }
+
+                 body .column-nav{
+                display: grid;
+                grid-template-columns: 1fr;
+                
+                /* background-color: aquamarine; */
+                height: 100%;
+                opacity: 95%; 
+                width: auto;
+                height: auto;
+                color: wheat;
+                text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+                font-size: xx-large;
+            }
+            body .main{
+                padding-top: 5%;
+                display: grid;
+                grid-template-rows:  auto;                
+                display: grid;
+                grid-template-columns: auto;
+                grid-auto-flow: row;
+                margin-bottom: 10px;
+                grid:auto;  
+              
+                /* grid-template-columns: repeat(3,1fr); */
+                height: 100%;
+                width: 100%;
+                border-radius: 5%;
+                
+            }
+
+            body .content{
+                display: grid;
+                grid-template-columns: 1fr ;
+                grid-auto-flow: row;
+                /* background-color: aquamarine; */
+                height: 100%;
+                opacity: 95%; 
+                
+                width: 100%;
+                color: wheat;
+                text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+                font-size: xx-large;
+            }
+            .image-container{
+                place-items: center;  
+                width: auto;
+                height: auto;
+                position: absolute;
+                grid-auto-flow: row;
+                padding-bottom: auto;
+                
+            }
+            #image{
+                width: 400px;
+                height: 400px;
+              
+                
+            }
+
+            }
+
+
+
+            .main{
+                
+                display: grid;
+                grid-template-rows:  auto;                
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-auto-flow: row;
+                margin-bottom: 10px;
+                grid:auto;  
+              
+                /* grid-template-columns: repeat(3,1fr); */
+                height: 100%;
+                width: 100%;
+                border-radius: 5%;
+                
+             
+                
+            }
+              .column-nav{
+                background: url("https://webpage.pace.edu/CM22566P/assignment3/PALADIN-BANNER.gif") no-repeat ;
+                display: grid;
+                 grid-template-columns: auto/1fr; 
+              
+                grid-auto-flow: row;
+                /* background-color: blueviolet; */
+                height:100%;
+                width: 100%;
+                
+                box-shadow: 0 4px 2px -2px gray;
+
+            }
+          
+           
+            a :hover{
+                animation: glow 2s infinite alternate-reverse;
+                box-shadow: none;
+                
+
+            }
+           
+            nav{
+                font-family: 'Brush Script MT', cursive;
+                font-size: 4rem;
+                grid-area: 100%;
+               
+                text-align: center;
+                width: 100%;
+                overflow: hidden;
+               
+            }
+            nav a{
+                color:gold;
+                cursor:pointer;
+                text-decoration: none;
+                 width: fit-content;
+                text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+              
+            }
+
+           
+            nav a:hover{
+
+            animation: glow 1s infinite alternate;
+            box-shadow: none;
+            color: brown;
+
+            }
+            nav a:active{
+
+                 background-color: yellow;
+
+            }
+           
+                      
+
+         .menu{
+                
+                display: grid;
+                grid-template-columns: auto;
+                justify-content: center;
+                align-items:center ;
+                
+                width: 100%;
+                height: 100%;
+               
+                /* background-color: aquamarine; */
+             
+            }
+            #home{
+                padding: 0%;
+                place-items: center;
+                border-radius: 5%;
+                display: grid;
+                grid-template-rows: auto;
+                justify-content: center;
+                align-items: center;
+                /* background-color: aquamarine; */
+                height: 100%;
+                width: 100%;
+                position: relative;
+              
+
+            }
+            
+            #About{
+                place-items: center;
+                border-radius: 5%;
+                display: grid;
+                grid-template-rows:auto;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                height: 100%;
+                width: 100%;
+              
+
+         
+            }
+
+            #Contact{
+                place-items: center;
+                border-radius: 5%;
+                display: grid;
+                grid-template-rows:auto;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                height: 100%;
+                width: 100%;
+                padding-top: 3em;
+                /* background-color: aquamarine; */
+                
+         
+            }
+
+
+            #video{
+          
+            grid-template-columns: fit-content(100%) fit-content(100%) 1fr;
+            height: 100%;
+            width: 100%;
+            
+            top: 0%;
+            grid-auto-flow: row;
+            resize:none;
+            overflow: hidden;
+            align-content: center;
+            border-radius: 5px;
+           
+             }
+
+            @keyframes glow {
+            from {
+                color: crimson;
+                border-radius: 5px;
+            }
+            to {
+                color: whitesmoke;
+                border-radius: 5px;
+            }
+            
+            }
+
+         
+
+            .content{
+                display: grid;
+                grid-template-columns: 1fr 1fr ;
+                grid-auto-flow: row;
+                /* background-color: aquamarine; */
+                height: 100%;
+                opacity: 95%; 
+                
+                width: 100%;
+                color: wheat;
+                text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+                font-size: xx-large;
+            }
+
+            
+            section{
+             
+                height: 100%;
+                display: grid;
+                grid-auto-flow: row;
+            }
+
+            h1{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: xx-large;
+
+            }
+            
+            .image-container{
+              
+            }
+
+            #image{
+                width: auto 100%;
+                height: auto 100%;
+            }
+
+                input[type=text], select, textarea {
+                width: 100%; 
+                padding: 12px; 
+                border: 1px solid #ccc;
+                border-radius: 4px; 
+                box-sizing: border-box; 
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical ;
+                }
+
+
+        input[type=submit] {
+                background-color: #04AA6D;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+        }
+
+
+        input[type=submit]:hover {
+             background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        </style>
+            
+        <script>
+            // document.getElementById("home")=display.visible("none")
+            function visiblehome() {
+                
+                var x = document.getElementById("home");
+                var y=document.getElementById("About");
+                var z = document.getElementById("Contact");
+                
+                y.style.display="none";
+                x.style.display="none";
+                z.style.display="none";
+
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+
+            function visibleAbout() {
+              
+                var x = document.getElementById("About");
+                var y=document.getElementById("home");
+                var z = document.getElementById("Contact");
+                y.style.display="none";
+                x.style.display="none";
+                z.style.display="none";
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            function visibleContact() {
+              
+              var x = document.getElementById("Contact");
+              var y=document.getElementById("home");
+              var z=document.getElementById("About");
+              y.style.display="none";
+              x.style.display="none";
+              z.style.display="none";
+              if (x.style.display === "none") {
+                  x.style.display = "block";
+              } else {
+                  x.style.display = "none";
+              }
+          }
+
+
+          (function ($) {
+         $.fn.arctic_scroll = function (options) {
+
+        var defaults = {
+            elem: $(this),
+            speed: 500
+        };
+        var options = $.extend(defaults, options);
+
+        options.elem.click(function(event){     
+            event.preventDefault();
+            var offset = ($(this).attr('data-offset')) ? $(this).attr('data-offset') : false,
+                position = ($(this).attr('data-position')) ? $(this).attr('data-position') : false;         
+            if (offset) {
+                var toMove = parseInt(offset);
+                $('html,body').stop(true, false).animate({scrollTop: ($(this.hash).offset().top + toMove) }, options.speed);
+            } else if (position) {
+                var toMove = parseInt(position);
+                $('html,body').stop(true, false).animate({scrollTop: toMove }, options.speed);
+            } else {
+                $('html,body').stop(true, false).animate({scrollTop: ($(this.hash).offset().top) }, options.speed);
+            }
+        });
+
+    };
+})(jQuery);
+
+$(function(){
+    $(".arctic_scroll").arctic_scroll({
+        // $(".content").arctic_scroll({
+        speed: 800
+    });
+});
+        </script>
+    </head>
+
+    <body>
+        <div class="column-nav">
+            <div class="menu">
+                <!-- <img id="logo" src="./Paladin.gif"> -->
+                <nav ><a href="#home" onclick="visiblehome()"  data-position="1200" class="arctic_scroll">Home</a>
+                        <a href="#About" onclick="visibleAbout()" data-position="1200" class="arctic_scroll">About</a>
+                        <a href="#Contact" onclick="visibleContact()" data-position="1200" class="arctic_scroll">Contact</a>
+                        
+             </nav>
+        </div>
+
+    <div class="main">
+         <!-- <div class="column-main"> -->
+        <section id="home" style="display:none;" >
+        <div class="content">
+                  
+                  <div>
+                     <h1>Home</h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta praesentium deleniti tenetur, distinctio dolore ipsum dolorum, illo sequi repellat blanditiis esse voluptatibus? Consequuntur dignissimos quas maiores ea libero facere incidunt.</p>
+                    <p>Magnam, dolores earum. Voluptatum laudantium voluptas odio similique excepturi ut ipsa maiores officia consectetur dolor fugiat labore aperiam ratione rerum, dolorum aspernatur nisi laboriosam veniam at. Corporis obcaecati debitis illum?</p>
+                    <p>Similique minus odio nam accusantium, corporis velit numquam rem, incidunt pariatur illum nulla consequuntur quia! Neque, dolor odio enim aspernatur sit perspiciatis sunt officia rem non assumenda quo est recusandae.</p>
+                    <p>Sit at molestiae facere temporibus labore unde? At sapiente exercitationem corporis culpa, voluptas excepturi tempora fuga molestias ratione ex provident, quam possimus doloremque! Optio repellat fugit deleniti omnis voluptate dolores.</p>
+                   
+                    </div>
+                
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta praesentium deleniti tenetur, distinctio dolore ipsum dolorum, illo sequi repellat blanditiis esse voluptatibus? Consequuntur dignissimos quas maiores ea libero facere incidunt.</p>
+                        <p>Magnam, dolores earum. Voluptatum laudantium voluptas odio similique excepturi ut ipsa maiores officia consectetur dolor fugiat labore aperiam ratione rerum, dolorum aspernatur nisi laboriosam veniam at. Corporis obcaecati debitis illum?</p>
+                        <p>Similique minus odio nam accusantium, corporis velit numquam rem, incidunt pariatur illum nulla consequuntur quia! Neque, dolor odio enim aspernatur sit perspiciatis sunt officia rem non assumenda quo est recusandae.</p>
+                        <p>Sit at molestiae facere temporibus labore unde? At sapiente exercitationem corporis culpa, voluptas excepturi tempora fuga molestias ratione ex provident, quam possimus doloremque! Optio repellat fugit deleniti omnis voluptate dolores.</p>
+                       
+                     
+                    </div>
+                </div>
+                </section>
+
+         <section id="About" style="display:none;" >
+        <div class="content">
+                <div>
+                    <h1>About</h1>
+
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta praesentium deleniti tenetur, distinctio dolore ipsum dolorum, illo sequi repellat blanditiis esse voluptatibus? Consequuntur dignissimos quas maiores ea libero facere incidunt.</p>
+                   <p>Magnam, dolores earum. Voluptatum laudantium voluptas odio similique excepturi ut ipsa maiores officia consectetur dolor fugiat labore aperiam ratione rerum, dolorum aspernatur nisi laboriosam veniam at. Corporis obcaecati debitis illum?</p>
+                   <p>Similique minus odio nam accusantium, corporis velit numquam rem, incidunt pariatur illum nulla consequuntur quia! Neque, dolor odio enim aspernatur sit perspiciatis sunt officia rem non assumenda quo est recusandae.</p>
+                   <p>Sit at molestiae facere temporibus labore unde? At sapiente exercitationem corporis culpa, voluptas excepturi tempora fuga molestias ratione ex provident, quam possimus doloremque! Optio repellat fugit deleniti omnis voluptate dolores.</p>
+                  
+                    </div>
+               
+                   <div class="">
+                     
+                       <video id="video" no-controls loop autoplay muted >
+                           <source src="https://webpage.pace.edu/CM22566P/assignment3/chrispaladin7%20(400%20%C3%97%20400%20px).mp4" type="video/mp4">
+                           <source src="movie.ogg" type="video/ogg">
+                       Your browser does not support the video tag.
+                       </video>
+                   </div>
+               </div>
+               </section>
+
+               <section id="Contact" style="display:none;" >
+                <div>
+                    <form action="action_page.php">
+
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                          <option value="UK">Australia</option>
+                          <option value="canada">Canada</option>
+                          <option value="USA">USA</option>
+                        </select>
+                    
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                    
+                      </form>
+                    </div>
+                   
+               </div>
+               </section>
+
+               
+    </body>
+</html>

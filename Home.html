@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                height: auto;
+                /* background-image:url('./CHRISTUS.gif'); */
+                background-size:100%;
+                background-repeat: repeat-y;
+                background-attachment: fixed;
+                background-size: cover;
+                height:100%;
+                width:100%;
+            }
+            @media screen and (max-width:600px) {
+                body{
+                /* background-image:url('./CHRISTUS\ \(Infographic\).gif'); */
+                background-size:100%;
+                background-repeat: repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                height:100%;
+                width:100%;
+                }
+
+            }
+            .main{
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                grid-template-rows: auto;                
+                grid-template-columns: repeat(3,1fr);
+                height: 100%;
+                width: 100%;
+                padding: auto;
+                
+            }
+            #image{
+            box-shadow: 10px -10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px -10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px -10px 5px 0px rgba(0,0,0,0.75);
+            justify-content: center;
+            align-items: center;
+
+            }
+
+           .column{
+
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                grid-template-rows: auto/repeat(3,1fr);
+                /* background-color: blueviolet; */
+                height: 100%;
+                width: 100%;
+                
+                
+            }
+            .row{
+
+                display: grid;
+                grid-template-rows: auto/repeat(3,1fr);
+                justify-content: center;
+                align-items: center;
+                /* background-color: aquamarine; */
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="main">
+        <div class="column">
+            <div class="row">
+                <nav><a href="">dsada</a></nav>
+                <nav><a href="">asdasd</a></nav>
+                <nav><a href="">asda</a></nav>
+                <nav><a href="">asdasd</a></nav>
+                <nav><a href="">asdas</a></nav>
+            </div>
+            <div class="row"></div>
+            <div class="row"></div>
+            </div>
+            <div class="column">
+            <div class="row"></div>
+            <div class="row"> </div>
+            <div class="row"></div>
+           </div>
+            </div>   
+            <div class="column">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            </div>
+            
+        </div>
+    </body>
+</html>
